@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/com/mycompany/app/features",
         glue = "com.mycompany.app.stepdefinitions",
-        plugin = {"pretty", "html:target/cucumber-reports.html"}
+        plugin = "com.hpe.alm.octane.OctaneGherkinFormatter:gherkin-results/ManualRunnerTest_OctaneGherkinResults.xml"
 )
 public class TestRunner {
 }
