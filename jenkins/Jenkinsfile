@@ -6,6 +6,11 @@ pipeline {
         }
     }
     stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/davbaster/BDD-example-1.git'
+            }
+        }
         stage('Test') {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true clean test'
