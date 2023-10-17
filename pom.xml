@@ -10,6 +10,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.microfocus.adm.almoctane.bdd</groupId>
             <artifactId>octane-cucumber-jvm</artifactId>
             <version>1.0.0</version>
