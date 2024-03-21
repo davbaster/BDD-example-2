@@ -1,15 +1,14 @@
 package com.mycompany.app.runner;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+import io.cucumber.junit.platform.engine.Cucumber;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(
-        features = "src/test/resources/features/",
-        glue = "com.mycompany.app.stepdefinitions",
-        plugin = "com.hpe.alm.octane.OctaneGherkinFormatter:gherkin-results/ManualRunnerTest_OctaneGherkinResults.xml"
+@Cucumber(
+    glue = "com.mycompany.app.stepdefinitions",
+    features = "src/test/resources/features/",
+    extraGlue = "com.hpe.alm.octane.OctaneGherkinFormatter:gherkin-results/ManualRunnerTest_OctaneGherkinResults.xml"
 )
 public class TestRunner {
+    // Configuration is included directly in the annotation parameters
 }
+
 
