@@ -54,6 +54,17 @@
                 <version>1.1.5</version>
                 <!-- Add configuration here if necessary -->
             </plugin>
+            <plugin>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>3.0.0-M5</version> <!-- use the appropriate version -->
+               <configuration>
+                 <includes>
+                   <include>**/*Test.java</include>
+                   <include>**/*Tests.java</include>
+                   <include>**/*TestRunner.java</include> <!-- Ensure your test runner is included -->
+                 </includes>
+               </configuration>
+             </plugin>
         </plugins>
     </build>
 
