@@ -15,17 +15,32 @@
             <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
-        <!--<dependency> 
+        <!-- Commented out as it will now be included as a plugin
+        <dependency>
             <groupId>com.microfocus.adm.almoctane.bdd</groupId>
             <artifactId>octane-cucumber-jvm</artifactId>
             <version>1.0.0</version>
-        </dependency>-->
+        </dependency>
+        -->
+        <!-- This is required only if bdd2octane is used as a dependency, but we are configuring it as a plugin
         <dependency>
             <groupId>com.microfocus.adm.almoctane.bdd</groupId>
             <artifactId>bdd2octane</artifactId>
             <version>1.1.5</version>
         </dependency>
+        -->
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.microfocus.adm.almoctane.bdd</groupId>
+                <artifactId>bdd2octane</artifactId>
+                <version>1.1.5</version>
+                <!-- Add configuration here if necessary -->
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
@@ -33,3 +48,4 @@
     </properties>
 
 </project>
+
