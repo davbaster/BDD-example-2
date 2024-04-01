@@ -57,7 +57,20 @@
             <plugin>
                <artifactId>maven-surefire-plugin</artifactId>
                <version>3.0.0-M5</version> <!-- use the appropriate version -->
-             </plugin>
+            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<properties>
+						<configurationParameters>
+							cucumber.glue=com.mycompany.app.stepdefinitions
+							cucumber.features=classpath:features/
+						</configurationParameters>
+					</properties>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
 
