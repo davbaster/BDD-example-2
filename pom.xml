@@ -40,11 +40,15 @@
             <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api -->
         <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-suite</artifactId>
-            <scope>test</scope>
+             <groupId>org.junit.platform</groupId>
+             <artifactId>junit-platform-suite-api</artifactId>
+             <version>1.10.2</version>
+             <scope>test</scope>
         </dependency>
+
+
         <!-- Add any other dependencies you have here -->
     </dependencies>
 
