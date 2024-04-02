@@ -21,6 +21,12 @@
             <version>7.4.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+             <groupId>io.cucumber</groupId>
+             <artifactId>cucumber-junit-platform-engine</artifactId>
+             <version>7.4.1</version>
+             <scope>test</scope>
+         </dependency>
         <!-- JUnit Jupiter (JUnit 5) dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
