@@ -13,9 +13,9 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectPackages("com.mycompany.app.runner")
+@SelectPackages("com.mycompany.app")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.mycompany.app.runner")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.mycompany.app")
 public class TestRunner {
   // Nothing is required here when using JUnit 5 with Cucumber
 }
