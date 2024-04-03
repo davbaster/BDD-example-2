@@ -1,4 +1,4 @@
-package com.mycompany.app.runner;
+package com.mycompany.app;
 
 //import io.cucumber.junit.platform.engine.Cucumber;
 

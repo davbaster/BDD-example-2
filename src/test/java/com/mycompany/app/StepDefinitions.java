@@ -1,4 +1,4 @@
-package com.mycompany.app.stepdefinitions;
+package com.mycompany.app;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
