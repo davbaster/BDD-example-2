@@ -82,14 +82,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <properties>
-                        <!-- Work around. Surefire does not include enough
-                             information to disambiguate between different
-                             examples and scenarios. -->
-                        <configurationParameters>
-                            cucumber.junit-platform.naming-strategy=long
-                        </configurationParameters>
-                    </properties>
+                    <workingDirectory>${project.basedir}</workingDirectory>
                 </configuration>
             </plugin>
         </plugins>
