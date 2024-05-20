@@ -1,6 +1,4 @@
-#Auto generated Octane revision tag
-@TID19001REV0.2.0
-Feature: User Authentication
+Feature: User Authentication 19001
 
   Scenario: Successful Login
     Given the user is on the login page

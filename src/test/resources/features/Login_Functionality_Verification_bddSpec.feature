@@ -1,4 +1,4 @@
-Feature: User Authentication
+Feature: User Authentication bddspec
 
   Scenario: Successful Login
     Given the user is on the login page
