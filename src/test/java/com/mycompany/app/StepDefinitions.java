@@ -3,7 +3,7 @@ package com.mycompany.app.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert; // Use Assert from JUnit 4
 
 public class StepDefinitions {
 
@@ -30,12 +30,12 @@ public class StepDefinitions {
     @Then("the user should be redirected to the homepage")
     public void theUserShouldBeRedirectedToTheHomepage() {
         // Verify the user is redirected to the homepage
-        Assertions.assertTrue(true);  // Replace with actual verification
+        Assert.assertTrue(true);  // Replace with actual verification
     }
 
     @Then("the user should see an error message")
     public void theUserShouldSeeAnErrorMessage() {
         // Verify the error message is displayed
-        Assertions.assertTrue(true);  // Replace with actual verification
+        Assert.assertTrue(true);  // Replace with actual verification
     }
 }
