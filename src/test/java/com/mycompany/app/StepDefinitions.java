@@ -22,6 +22,12 @@ public class StepDefinitions {
         // Enter incorrect email or password
     }
 
+    @When("the user enters correct email or password")
+    public void the_user_enters_correct_email_or_password() {
+        // Write code here that turns the phrase above into concrete actions
+        //throw new io.cucumber.java.PendingException();
+    }
+
     @When("the user clicks the login button")
     public void theUserClicksTheLoginButton() {
         // Click the login button
