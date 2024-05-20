@@ -37,14 +37,6 @@
             <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- This JUnit 4 dependency can be removed if all tests are updated to use JUnit 5 -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
