@@ -36,7 +36,9 @@ public class StepDefinitions {
     @Then("the user should be redirected to the homepage")
     public void theUserShouldBeRedirectedToTheHomepage() {
         // Verify the user is redirected to the homepage
-        Assert.assertTrue(true);  // Replace with actual verification
+         boolean isRedirectedToHomepage = true; // This would usually be set based on actual logic
+        // Failing the test intentionally
+        Assert.assertFalse("The user was incorrectly redirected to the homepage.", isRedirectedToHomepage);
     }
 
     @Then("the user should see an error message")
