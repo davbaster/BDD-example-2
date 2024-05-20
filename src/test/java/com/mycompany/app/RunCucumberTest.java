@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         glue = "com.mycompany.app",
         plugin = "com.hpe.alm.octane.OctaneGherkinFormatter:gherkin-results/ManualRunnerTest_OctaneGherkinResults.xml"
 )
-public class TestRunner {
+public class RunCucumberTest {
 }
