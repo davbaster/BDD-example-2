@@ -1,0 +1,36 @@
+pipeline {
+    agent {
+        docker {
+            image 'maven:3.8.6-jdk-11-slim'
+            args '-v /root/.m2:/root/.m2'
+        }
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/davbaster/BDD-example-2.git'
+            }
+        }
+        stage('Test') {
+            steps {
+
+                script {
+                    // Groovy variable declaration should be inside the script block
+                    testsToRunConverted = "src/test/resources/features"
+                    // Now call the shell step with the Groovy variable
+                    sh "mvn clean test -X -Dcucumber.features='${testsToRunConverted}'"
+            
+            }
+        }
+        stage('Results') {
+            steps {
+                junit '**/target/surefire-reports/*.xml'
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Delivering ./jenkins/scripts/deliver.sh'
+            }
+        }
+    }
+}
